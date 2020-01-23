@@ -1,5 +1,7 @@
 const $ = require('jquery');
 
-const sayHello = () => console.log("hello");
+$('body').html("<h2>" + "Hello World" + "</h2>")
 
-sayHello()
+// import {sayHello} from "./say-hello.js";
+const {sayHello} = require ("./say-hello.js")
+console.log(sayHello());
